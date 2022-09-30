@@ -68,7 +68,7 @@ function GetDistinct(arrData, strVar) {
     console.log("line 53");
     console.log(arr);
     return arr;
-  } else if (strVar === "Varient") {
+  } else if (strVar === "Variant") {
     var i, j, k;
     var arr = [],
       i,
@@ -169,7 +169,7 @@ function GenerateAbbreviation(arrDatas, strVar) {
     fs.writeFileSync("output2.csv", finalArr);
     console.log(finalArr);
     return abbreData;
-  } else if (strVar === "Varient") {
+  } else if (strVar === "Variant") {
     var i, j, k;
     var abbreData = [],
       i,
@@ -267,5 +267,5 @@ var arrDataModel = ReadDataFile("output1");
 var arrOfModels = GetDistinct(arrDataModel, "Model");
 var abbre_ModelData = GenerateAbbreviation(arrOfModels, "Model");
 var arrDataVarient = ReadDataFile("output2");
-var arrOfVarients = GetDistinct(arrDataVarient, "Varient");
-var abbre_VarientData = GenerateAbbreviation(arrOfVarients, "Varient");
+var arrOfVarients = GetDistinct(arrDataVarient, "Variant");
+var abbre_VarientData = GenerateAbbreviation(arrOfVarients, "Variant");
